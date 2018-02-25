@@ -1,0 +1,60 @@
+<?php
+
+  require_once('template/header.html');
+
+?>
+
+    <!-- Popup -->
+    <div style='display:none'>
+
+      <!-- Registration -->
+      <div id='popup_registration' style='padding:10px; background:#fff;'>
+
+        <div id="successAlert" style="display:none;" class="alert alert-success" role="alert">
+        Success. You are being logged in now...
+        </div>
+
+        <br/><br/><br/>
+        <div id="formRegister">
+          <input id="title" name="title" type="title" placeholder="Title" required/>
+          <br/>
+          <input id="firstName" name="firstName" type="firstName" placeholder="First name" required/>
+          <br/>
+          <input id="lastName" name="lastName" type="lastName" placeholder="lastName" required/>
+          <br/>
+          <input id="emailRegistration" name="emailRegistration" type="email" placeholder="Email" required/>
+          <br/>
+          <input id="passwordRegistration" name="passwordRegistration" type="password" placeholder="Password" required/>
+          <br/>
+          <input type="submit" id="submitRegister" value="Sign up"/>
+        </div>
+
+      </div>
+
+      <!-- Login -->
+      <div id='popup_login' style='padding:10px; background:#fff;'>
+        <br/><br/><br/>
+          <div id="formLogin">
+            <input id="emailLogin" name="emailLogin" type="email" placeholder="Email" required/>
+            <br/>
+            <input id="passwordLogin" name="passwordLogin" type="password" placeholder="Password" required/>
+            <br/>
+            <input type="submit" value="Login"/>
+
+            <a class="inline" href="#popup_registration">Click here to load new content</a></p>
+
+          </div>
+      </div>
+
+    </div>
+    <!-- End Popup -->
+
+    <button id="tester">tester</button>
+
+
+
+<?php
+
+  require_once('template/footer.html');
+
+?>

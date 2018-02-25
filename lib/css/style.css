@@ -1,0 +1,47 @@
+@media all {
+  #colorbox {
+    max-width:600px !important;
+  }
+};
+
+@media (max-width:900px) and (min-width:481px) {
+  #colorbox {
+    width:200px !important;
+  }
+}​;
+
+@media (max-width:480px) and (min-width:0px){
+  #colorbox, #cboxContent {
+    width:200px !important;
+  }
+
+  #cboxWrapper *, #cboxWrapper {
+    weight:auto !important;
+
+  }
+
+}​
+/*
+@media (max-width: 480px) {
+  #colorbox {
+    width:200px !important;
+  }
+
+
+} */
+
+
+/* // TODO - USE THESE DIMENTIONS:::after */
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

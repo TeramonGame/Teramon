@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="lib/css/colorbox.css"/>
+
+    <!-- Teramon stylesheet -->
+    <link rel="stylesheet" href="lib/css/style.css"/>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js"></script>
+
+    <!-- Leave out Storage -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-storage.js"></script> -->
+
+  </head>
+  <body>
+
+    <!-- Menu -->
+    <!-- Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Teramon
+      </a>
+      <!-- Burger Menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto  my-2 my-lg-0 justify-content-end">
+
+          <li class="nav-item">
+            <a class="nav-link" href="learn-more.html">Learn more</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog/index.html">Blog</a>
+          </li>
+
+          <li class="nav-item" id="menuLogin">
+            <a class="inline nav-link" href="#popup_login">Login</a>
+          </li>
+
+          <li class="nav-item" id="menuRegister">
+            <button href="#popup_registration" class="inline btn btn-primary my-2 my-sm-0">Sign up</button>
+          </li>
+
+          <li  id="menuUser" class="nav-item dropdown pull-right">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              User
+              <!-- TODO - change with welcome message and user name -->
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="  left: auto; right:0 !important">
+              <a class="dropdown-item" href="#">View Dashboard</a>
+              <div class="dropdown-divider"></div>
+              <a id="logout" class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- End Menu -->
